@@ -214,7 +214,7 @@ PROGRAM DiffusionEquation
   CALL cmfe_Field_Initialise(GeometricField,Err)
   CALL cmfe_Field_CreateStart(GeometricFieldUserNumber,Region,GeometricField,Err)
   !Set the decomposition to use
-  CALL cmfe_Field_MeshDecompositionSet(GeometricField,Decomposition,Err)
+  CALL cmfe_Field_DecompositionSet(GeometricField,Decomposition,Err)
   !Set the domain to be used by the field components.
   CALL cmfe_Field_ComponentMeshComponentSet(GeometricField,CMFE_FIELD_U_VARIABLE_TYPE,1,1,Err)
   CALL cmfe_Field_ComponentMeshComponentSet(GeometricField,CMFE_FIELD_U_VARIABLE_TYPE,2,1,Err)
